@@ -74,10 +74,31 @@ const prefix = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
         {notes && <Notes notes={notes} />}
         {links && <Links links={links} />}
       </div>
+      
+          <section class="mx-auto mt-16 mb-8 max-w-[60rem] px-6">
+      <h2 class="mb-8 text-center text-2xl font-medium">Collaborating Institutions</h2>
+        <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-1">
+          <img src={prefix + "assets/logos/1milab.png"} alt="MILab" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/2scu.png"} alt="SCU" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/3HKUST.png"} alt="HKUST" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/4westchina.png"} alt="WestChina" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/5zigong.jpg"} alt="Zigong" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/6CDMC.png"} alt="CDMC" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/7zigong.png"} alt="Zigong" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/8pku.png"} alt="PKU" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/9swu.png"} alt="SWU" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/10dazhou.jpg"} alt="DaZhou" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/11sysu.webp"} alt="SYSU" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/12KMU.png"} alt="KMU" class="h-20 w-auto object-contain" />
+          <img src={prefix + "assets/logos/13TSU.png"} alt="TSU" class="h-20 w-auto object-contain" />
+        </div>
+    </section>
+
     </header>
     <main>
       <Content components={{ table: Table }} />
     </main>
+
     <footer class="mx-auto max-w-[50rem] px-6 text-center">
       <p>© 2026 Machine Intelligence Lab, Sichuan University, Chengdu, China . All rights reserved. This website is intended solely for academic and research dissemination purposes. Unauthorized reproduction or distribution is prohibited.</p>
       <p><em>This website was designed and developed by Xiang Li.</em></p>
