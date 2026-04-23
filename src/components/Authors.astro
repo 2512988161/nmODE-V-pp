@@ -8,14 +8,15 @@ interface Props {
 const { authors } = Astro.props;
 ---
 
-<div class="links flex flex-row flex-wrap justify-center gap-x-8 gap-y-4">
+
+<div class="links flex flex-row flex-wrap justify-center gap-x-6 gap-y-2">
   {
     authors.map((author) => (
-      <div class="flex flex-col items-center text-center">
-        <div class="flex flex-row text-xl">
+      <div class="flex flex-col items-center text-center leading-tight">
+        <div class="flex flex-row items-start text-lg">
           {author.url ? <a href={author.url}>{author.name}</a> : author.name}
           {author.notes && (
-            <sup class="text-xl">
+            <sup class="text-xs ml-0.5">
               {author.notes.map(
                 (note, index, array) =>
                   note + (index < array.length - 1 ? "," : ""),
@@ -23,7 +24,7 @@ const { authors } = Astro.props;
             </sup>
           )}
         </div>
-        {author.institution && <div>{author.institution}</div>}
+        {author.institution && <div class="text-xs">{author.institution}</div>}
       </div>
     ))
   }
