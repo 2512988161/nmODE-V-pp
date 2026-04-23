@@ -75,7 +75,12 @@ const prefix = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
         {links && <Links links={links} />}
       </div>
 
-          <section class="mx-auto mt-16 mb-8 max-w-[60rem] px-6">
+
+    </header>
+    <main>
+      <Content components={{ table: Table }} />
+    </main>
+      <section class="mx-auto mt-16 mb-8 max-w-[60rem] px-6">
       <h2 class="mb-8 text-center text-2xl font-medium">Collaborating Institutions</h2>
         <div class="flex flex-wrap justify-center items-center gap-x-6 gap-y-1">
           <img src={prefix + "assets/logos/1milab.jpeg"} alt="MILab" class="h-20 w-auto object-contain" />
@@ -93,11 +98,6 @@ const prefix = baseUrl.endsWith("/") ? baseUrl : baseUrl + "/";
           <img src={prefix + "assets/logos/13TSU.jpeg"} alt="TSU" class="h-20 w-auto object-contain" />
         </div>
     </section>
-
-    </header>
-    <main>
-      <Content components={{ table: Table }} />
-    </main>
 
     <footer class="mx-auto max-w-[50rem] px-6 text-center">
       <p>© 2026 Machine Intelligence Lab, Sichuan University, Chengdu, China . All rights reserved. This website is intended solely for academic and research dissemination purposes. Unauthorized reproduction or distribution is prohibited.</p>
